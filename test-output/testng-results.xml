@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-20T20:39:46 IST" name="Default suite" finished-at="2026-02-20T20:39:53 IST" duration-ms="7369">
+    <groups>
+    </groups>
+    <test started-at="2026-02-20T20:39:46 IST" name="Default test" finished-at="2026-02-20T20:39:53 IST" duration-ms="7369">
+      <class name="oAuth.RahulShettyAPI">
+        <test-method signature="getCode()[pri:0, instance:oAuth.RahulShettyAPI@59474f18]" started-at="2026-02-20T20:39:46 IST" name="getCode" finished-at="2026-02-20T20:39:50 IST" duration-ms="4421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCode -->
+        <test-method signature="getAccessToken()[pri:0, instance:oAuth.RahulShettyAPI@59474f18]" started-at="2026-02-20T20:39:50 IST" name="getAccessToken" finished-at="2026-02-20T20:39:52 IST" depends-on-methods="oAuth.RahulShettyAPI.getCode" duration-ms="1976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAccessToken -->
+        <test-method signature="getInfo()[pri:0, instance:oAuth.RahulShettyAPI@59474f18]" started-at="2026-02-20T20:39:52 IST" name="getInfo" finished-at="2026-02-20T20:39:53 IST" depends-on-methods="oAuth.RahulShettyAPI.getAccessToken" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInfo -->
+      </class> <!-- oAuth.RahulShettyAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

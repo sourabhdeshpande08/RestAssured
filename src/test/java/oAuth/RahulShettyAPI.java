@@ -19,6 +19,7 @@ public class RahulShettyAPI {
 	@Test
 	public void getCode() throws InterruptedException {
 
+		//This method will get the auth code using Google authorization server.
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--user-data-dir=C:/temp/automation_profile");
 		options.addArguments("--remote-allow-origins=*");

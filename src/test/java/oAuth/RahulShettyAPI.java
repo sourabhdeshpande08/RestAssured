@@ -19,7 +19,7 @@ public class RahulShettyAPI {
 	@Test
 	public void getCode() throws InterruptedException {
 
-		//This method will get the authorization code.
+		//This method will get the authorization code from google authorization server.
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--user-data-dir=C:/temp/automation_profile");
 		options.addArguments("--remote-allow-origins=*");
@@ -43,6 +43,7 @@ public class RahulShettyAPI {
 	@Test(dependsOnMethods = "getCode")
 	public void getAccessToken() {
 
+		//This method will fetch the access token from google resource server.
 		String response = given().log().all().urlEncodingEnabled(false).baseUri("https://www.googleapis.com")
 				.queryParam("code", code)
 				.queryParam("client_id", "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com")

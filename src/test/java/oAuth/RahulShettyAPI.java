@@ -60,6 +60,7 @@ public class RahulShettyAPI {
 	@Test(dependsOnMethods="getAccessToken")
 	public void getInfo() {
 		
+		//This method will allow the third party user to access the required webpage.
 		RequestSpecification getInfoBaseReq = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").addQueryParam("access_token", accessToken).build();
 		String info = given().log().all().spec(getInfoBaseReq).when().get("/getCourse.php").then().log().all().extract().response().asPrettyString();
 		
